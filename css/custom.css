@@ -543,23 +543,14 @@ body {
 
 
 
-
-
+.books-page {
+  margin: 0 250px;
+}
 
 .books-page .books-hero {
   background-color: #B9C2AF;
   text-align: center;
   padding: 80px 0;
-}
-
-.books-page {
-  margin: 0 250px;
-}
-
-.book-card img {
-  width: 50%;
-  height: 350px;
-  object-fit: contain;
 }
 
 .books-page .books-hero h1 {
@@ -685,9 +676,10 @@ body {
   margin-bottom: 40px;
 }
 
-.books-page .review-row {
+.books-page .review-row,
+.books-page .interview-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   margin-bottom: 40px;
 }
@@ -696,26 +688,14 @@ body {
   flex: 5;
 }
 
-.books-page .review-img {
+.books-page .review-img,
+.books-page .interview-img {
   flex: 5;
   width: 100%;
   border-radius: 6px;
 }
 
-.books-page .interview-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-  margin-bottom: 40px;
-}
-
-.books-page .interview-img {
-  flex: 6;
-  width: 100%;
-  border-radius: 6px;
-}
-
-.interview-text h3 {
+.books-page .interview-text h3 {
   color: #26582E;
   font-weight: 700;
 }
@@ -724,14 +704,17 @@ body {
   flex: 3;
 }
 
+/* ---------------------- Responsive ---------------------- */
 @media (max-width: 992px) {
   .books-page .books-hero h1 {
     width: 100%;
     font-size: 1.8rem;
   }
+
   .books-page .custom-btn-books-green {
     width: 50%;
   }
+
   .books-page .inspiration-row,
   .books-page .book-info-grid,
   .books-page .review-row,
@@ -739,6 +722,7 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
   .books-page .inspiration-text-box,
   .books-page .bookshelf-img,
   .books-page .book-card,
@@ -748,6 +732,7 @@ body {
   .books-page .interview-img {
     width: 100%;
   }
+
   .books-page .book-card .btn-group {
     align-items: center;
   }
